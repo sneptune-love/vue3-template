@@ -1,16 +1,15 @@
 {
-  "name": "vue3-template",
+  "name": "testb",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint",
-    "prepare": "husky install"
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "@commitlint/cli": "^16.2.3",
-    "@commitlint/config-conventional": "^16.2.1",
     "core-js": "^3.8.3",
     "vue": "^3.2.13",
     "vue-class-component": "^8.0.0-0",
@@ -18,27 +17,34 @@
     "vuex": "^4.0.0"
   },
   "devDependencies": {
+    "@types/chai": "^4.2.15",
+    "@types/mocha": "^8.2.1",
     "@typescript-eslint/eslint-plugin": "^5.4.0",
     "@typescript-eslint/parser": "^5.4.0",
     "@vue/cli-plugin-babel": "~5.0.0",
+    "@vue/cli-plugin-e2e-cypress": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
     "@vue/cli-plugin-router": "~5.0.0",
     "@vue/cli-plugin-typescript": "~5.0.0",
+    "@vue/cli-plugin-unit-mocha": "~5.0.0",
     "@vue/cli-plugin-vuex": "~5.0.0",
     "@vue/cli-service": "~5.0.0",
     "@vue/eslint-config-standard": "^6.1.0",
     "@vue/eslint-config-typescript": "^9.1.0",
-    "autoprefixer": "^10.4.2",
+    "@vue/test-utils": "^2.0.0-0",
+    "chai": "^4.2.0",
+    "cypress": "^8.3.0",
     "eslint": "^7.32.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^5.1.0",
     "eslint-plugin-vue": "^8.0.3",
-    "husky": "^7.0.4",
     "less": "^4.0.0",
     "less-loader": "^8.0.0",
-    "postcss-px-to-viewport": "^1.1.1",
-    "typescript": "~4.5.5"
+    "typescript": "~4.5.5",
+    "@commitlint/cli": "^12.0.0",
+    "@commitlint/config-conventional": "^12.1.4",
+    "husky": "^4.2.5"
   },
   "husky": {
     "hooks": {
