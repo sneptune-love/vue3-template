@@ -1,30 +1,28 @@
 <template>
-  <nav>
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About -14</router-link>
-  </nav>
+  <XfHeader :title="$route.name" />
   <router-view/>
 </template>
 
-<style lang="less">
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
-
-nav {
-  padding: 30px;
-
-  a {
-    font-weight: bold;
-    color: #2c3e50;
-
-    &.router-link-exact-active {
-      color: #42b983;
+<script lang="ts">
+import { defineComponent } from 'vue'
+import routes from '@/router/list'
+export default defineComponent({
+  setup () {
+    return {
+      title: 'homeView',
+      list: routes
+    }
+  },
+  methods: {
+    goPath (path: string) {
+      this.$router.push({
+        path
+      })
     }
   }
-}
+})
+</script>
+
+<style lang="less">
+
 </style>

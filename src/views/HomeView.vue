@@ -1,18 +1,50 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js + TypeScript App"/>
+    <div class="nav-list">
+      <div class="nav-item" v-for="(item, index) in list" :key="index" @click="goPath(item.path)">
+        <img src="https://img1.baidu.com/it/u=3889343928,1020388913&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
+        <p class="name">{{item.name}}</p>
+      </div>
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component'
-import HelloWorld from '@/components/HelloWorld.vue' // @ is an alias to /src
+import { defineComponent } from 'vue'
+import routes from '@/router/list'
 
-@Options({
-  components: {
-    HelloWorld
+export default defineComponent({
+  setup () {
+    return {
+      list: routes
+    }
+  },
+  methods: {
+    goPath (path: string) {
+      this.$router.push({
+        path
+      })
+    }
   }
 })
-export default class HomeView extends Vue {}
+
 </script>
+
+<style lang="less" scoped>
+.nav-list {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  padding: 0 10px;
+  .nav-item {
+    width: 60px;
+    margin-right: 10px;
+    img {
+      width: 60px;
+      border-radius: 4px;
+    }
+  }
+}
+</style>
