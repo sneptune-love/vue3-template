@@ -5,6 +5,7 @@
         <img src="https://img1.baidu.com/it/u=3889343928,1020388913&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=500" alt="">
         <p class="name">{{item.name}}</p>
       </div>
+      <van-button>1234</van-button>
     </div>
   </div>
 </template>

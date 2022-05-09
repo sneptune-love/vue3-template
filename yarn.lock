@@ -1244,6 +1244,11 @@
   resolved "https://registry.npmmirror.com/@polka/url/-/url-1.0.0-next.21.tgz#5de5a2385a35309427f6011992b544514d559aa1"
   integrity sha512-a5Sab1C4/icpTZVzZc5Ghpz88yQtGOyNqYXcZgOssB2uuAr+wF/MvN6bgtW32q7HHrvBki+BsZ0OuNv6EV3K9g==
 
+"@popperjs/core@^2.9.2":
+  version "2.11.5"
+  resolved "https://registry.npmmirror.com/@popperjs/core/-/core-2.11.5.tgz#db5a11bf66bdab39569719555b0f76e138d7bd64"
+  integrity sha512-9X2obfABZuDVLCgPK9aX0a/x4jaOEweTTWE2+9sr0Qqqevj2Uv5XorvusThmc9XGYpS9yI+fhh8RTafBtGposw==
+
 "@sideway/address@^4.1.3":
   version "4.1.4"
   resolved "https://registry.npmmirror.com/@sideway/address/-/address-4.1.4.tgz#03dccebc6ea47fdc226f7d3d1ad512955d4783f0"
@@ -1609,6 +1614,23 @@
   version "1.1.2"
   resolved "https://registry.npmmirror.com/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz#aa58042711d6e3275dd37dc597e5d31e8c290a44"
   integrity sha512-sL/cEvJWAnClXw0wHk85/2L0G6Sj8UB0Ctc1TEMbKSsmpRosqhwj9gWgFRZSrBr2f9tiXISwNhCPmlfqUqyb9Q==
+
+"@vant/icons@^1.8.0":
+  version "1.8.0"
+  resolved "https://registry.npmmirror.com/@vant/icons/-/icons-1.8.0.tgz#36b13f2e628b533f6523a93a168cf02f07056674"
+  integrity sha512-sKfEUo2/CkQFuERxvkuF6mGQZDKu3IQdj5rV9Fm0weJXtchDSSQ+zt8qPCNUEhh9Y8shy5PzxbvAfOOkCwlCXg==
+
+"@vant/popperjs@^1.1.0":
+  version "1.1.0"
+  resolved "https://registry.npmmirror.com/@vant/popperjs/-/popperjs-1.1.0.tgz#b4edee5bbfa6fb18705986e313d4fd5f17942a0f"
+  integrity sha512-8MD1gz146awV/uPxYjz4pet22f7a9YVKqk7T+gFkWFwT9mEcrIUEg/xPrdOnWKLP9puXyYtm7oVfSDSefZ/p/w==
+  dependencies:
+    "@popperjs/core" "^2.9.2"
+
+"@vant/use@^1.3.6":
+  version "1.3.6"
+  resolved "https://registry.npmmirror.com/@vant/use/-/use-1.3.6.tgz#7618d3a72ad6cd622a8b3cbc693ed1540426a05b"
+  integrity sha512-3z+nywPaV2F5BdJO7RQxWlgfzJeEOmViD2yHMb7Tg+R4NR/7iQskqW8v2Cnv9FWSJgTOSHlcr7UzeLpiTAP4HA==
 
 "@vue/babel-helper-vue-jsx-merge-props@^1.2.1":
   version "1.2.1"
@@ -8076,6 +8098,11 @@ trim-newlines@^3.0.0:
   resolved "https://registry.npmmirror.com/trim-newlines/-/trim-newlines-3.0.1.tgz#260a5d962d8b752425b32f3a7db0dcacd176c144"
   integrity sha512-c1PTsA3tYrIsLGkJkzHF+w9F2EyxfXGo4UyJc4pFL++FMjnq0HJS69T3M7d//gKrFKwy429bouPescbjecU+Zw==
 
+ts-import-plugin@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.npmmirror.com/ts-import-plugin/-/ts-import-plugin-2.0.0.tgz#7366beb7c6deab59165363134e8953ac07b8af49"
+  integrity sha512-pjWVq8uCjExk1XarLAUCWssEnCtHHlcQavLdhpsxIguTgKyz7sx2GqR8a0irnrHZR/+bu1SPT5L77LCuu6y5BA==
+
 ts-loader@^9.2.5:
   version "9.2.8"
   resolved "https://registry.npmmirror.com/ts-loader/-/ts-loader-9.2.8.tgz#e89aa32fa829c5cad0a1d023d6b3adecd51d5a48"
@@ -8312,6 +8339,15 @@ validate-npm-package-license@^3.0.1:
     spdx-correct "^3.0.0"
     spdx-expression-parse "^3.0.0"
 
+vant@^3.4.9:
+  version "3.4.9"
+  resolved "https://registry.npmmirror.com/vant/-/vant-3.4.9.tgz#53ea09b0aa228474fe5a5a6c6bc9f07ba91c6ad9"
+  integrity sha512-OXwfL3oDahlEQC4HhaC7TmM9uoPDjAuWi1mR/OLW3JyOvPoCR8YhOtX2M6OQnz3Hnd3l4oWjjASKNGltWiPtjQ==
+  dependencies:
+    "@vant/icons" "^1.8.0"
+    "@vant/popperjs" "^1.1.0"
+    "@vant/use" "^1.3.6"
+
 vary@~1.1.2:
   version "1.1.2"
   resolved "https://registry.npmmirror.com/vary/-/vary-1.1.2.tgz#2299f02c6ded30d4a5961b0b9f74524a18f634fc"
@@ -8512,7 +8548,7 @@ webpack-dev-server@^4.7.3:
     webpack-dev-middleware "^5.3.1"
     ws "^8.4.2"
 
-webpack-merge@^5.7.3:
+webpack-merge@^5.7.3, webpack-merge@^5.8.0:
   version "5.8.0"
   resolved "https://registry.npmmirror.com/webpack-merge/-/webpack-merge-5.8.0.tgz#2b39dbf22af87776ad744c390223731d30a68f61"
   integrity sha512-/SaI7xY0831XwP6kzuwhKWVKDP9t1QY1h65lAFLbZqMPIuYcD9QAW4u9STIbU9kaJbPBB/geU/gLr1wDjOhQ+Q==

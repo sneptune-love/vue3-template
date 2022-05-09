@@ -13,6 +13,9 @@ export default defineComponent({
       list: routes
     }
   },
+  mounted () {
+    console.log(process.env)
+  },
   methods: {
     goPath (path: string) {
       this.$router.push({
